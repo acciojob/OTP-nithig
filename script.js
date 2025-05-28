@@ -2,7 +2,7 @@
 const codes = document.querySelectorAll('.code');
 
         // Focus the first input field when the page loads
-        window.addEventListener('load', () => codes[0].focus());
+        // window.addEventListener('load', () => codes[0].focus());
 
         // Add event listeners to each input field
         codes.forEach((code, idx) => {

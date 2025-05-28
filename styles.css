@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom styling for OTP input fields */
+        .code {
+            width: 3rem; /* Fixed width for each input */
+            height: 3rem; /* Fixed height for each input */
+            text-align: center;
+            font-size: 1.5rem; /* Large font size for digits */
+            font-weight: 600; /* Semi-bold text */
+            border: 2px solid #d1d5db; /* Light gray border */
+            border-radius: 0.5rem; /* Rounded corners */
+            outline: none; /* Remove default outline */
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            -moz-appearance: textfield; /* Hide arrows for number type in Firefox */
+        }
+
+        .code:focus {
+            border-color: #3b82f6; /* Blue border on focus */
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Light blue shadow on focus */
+        }
+
+        /* Hide number input arrows for Chrome, Safari, Edge */
+        .code::-webkit-outer-spin-button,
+        .code::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+		}

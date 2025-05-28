@@ -4,10 +4,31 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
 </head>
 
-<body>
-	<!-- the entire body must be written by student -->
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full text-center">
+        <h1 id="verification_heading" class="text-3xl font-bold text-gray-800 mb-4">Verify Your Account</h1>
+        <p id="verification_subtext" class="text-gray-600 mb-8">
+            We have sent a 6-digit code to your email. Please enter it below to verify your account.
+        </p>
+
+        <div class="code-container flex justify-center space-x-3 mb-8">
+            <input type="text" class="code" maxlength="1" pattern="[0-9]" inputmode="numeric" />
+            <input type="text" class="code" maxlength="1" pattern="[0-9]" inputmode="numeric" />
+            <input type="text" class="code" maxlength="1" pattern="[0-9]" inputmode="numeric" />
+            <input type="text" class="code" maxlength="1" pattern="[0-9]" inputmode="numeric" />
+            <input type="text" class="code" maxlength="1" pattern="[0-9]" inputmode="numeric" />
+            <input type="text" class="code" maxlength="1" pattern="[0-9]" inputmode="numeric" />
+        </div>
+
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200 shadow-md">
+            Verify
+        </button>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
